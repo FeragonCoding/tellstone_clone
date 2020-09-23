@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tellstone | CLONE</title>
+
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <div id='line'>
+    <div class='score-token player-1-st' id='py1-st-1' used='0'>I</div>
+    <div class='score-token player-1-st' id='py1-st-2' used='0'>II</div>
+    <div class='score-token player-1-st' id='py1-st-3' used='0'>III</div>
+
+    <div class='line-stone' id='ls-1' name='' facedown='0' used='0'></div>
+    <div class='line-stone' id='ls-2' name='' facedown='0' used='0'></div>
+    <div class='line-stone' id='ls-3' name='' facedown='0' used='0'></div>
+    <div class='line-stone' id='ls-4' name='' facedown='0' used='0'></div>
+    <div class='line-stone' id='ls-5' name='' facedown='0' used='0'></div>
+    <div class='line-stone' id='ls-6' name='' facedown='0' used='0'></div>
+    <div class='line-stone' id='ls-7' name='' facedown='0' used='0'></div>
+
+    <div class='score-token player-2-st' id='py2-st-1' used='0'>I</div>
+    <div class='score-token player-2-st' id='py2-st-2' used='0'>II</div>
+    <div class='score-token player-2-st' id='py2-st-3' used='0'>III</div>
+  </div>
+  <div id='next-turn-button' active='0'><h2>NEXT TURN</h2></div>
+  <div id='end-game-button' active='0'><h2>END GAME</h2></div>
+  <br>
+  <div id='pool'>
+    <div class='pool-stone' id='ps-1' name='crown' used='0'></div>
+    <div class='pool-stone' id='ps-2' name='shield' used='0'></div>
+    <div class='pool-stone' id='ps-3' name='sword' used='0'></div>
+    <div class='pool-stone' id='ps-4' name='flag' used='0'></div>
+    <div class='pool-stone' id='ps-5' name='knight' used='0'></div>
+    <div class='pool-stone' id='ps-6' name='hammer' used='0'></div>
+    <div class='pool-stone' id='ps-7' name='scales' used='0'></div>
+  </div>
+
+  <div class='shout-text' id='challenge-text'>I CHALLENGE <b>YOU</b> TO NAME THIS STONE!</div>
+  <div class='shout-text' id='boast-text'>I KNOW ALL THE HIDDEN SYMBOLS!</div>
+  <div class='shout-text' id='player-1-point'>PLAYER 1 EARN A POINT!</div>
+  <div class='shout-text' id='player-2-point'>PLAYER 2 EARN A POINT!</div>
+  <div class='shout-text' id='player-1-won'>PLAYER 1 WON!</div>
+  <div class='shout-text' id='player-2-won'>PLAYER 2 WON!</div>
+
+  <div class='overlay-menu'>
+    <div id='player-actions-container'>
+      <h1 id='player-number'>Player 1</h1><hr>
+      <h4>Choose your action</h4>
+      <h3 class='player-actions' active='1' id='pa-place' value='Place'>Place</h3>
+      <h3 class='player-actions' active='1' id='pa-hide' value='Hide'>Hide</h3>
+      <h3 class='player-actions pa-disable' active='0' id='pa-swap' value='Swap'>Swap</h3>
+      <h3 class='player-actions pa-disable' active='0' id='pa-peek' value='Peek'>Peek</h3>
+      <h3 class='player-actions pa-disable' active='0' id='pa-challenge' value='Challenge'>Challenge</h3>
+      <h3 class='player-actions pa-disable' active='0' id='pa-boast' value='Boast'>Boast</h3>
+    </div>
+
+    <div id='boast-actions-container'>
+      <h1 id='boast-player'>I KNOW ALL THE HIDDEN SYMBOLS!</h1>
+      <hr>
+      <h4><label id='opposite-boast-player'>Player 1</label> which is your answer...</h4><br>
+      <h3 class='boast-actions' value='believe'>I Believe you, have a point</h3>
+      <h3 class='boast-actions' value='dontBelieve'>I don't believe you, prove it</h3>
+      <h3 class='boast-actions' value='dontCare'>I don't care. I know them too</h3>
+      <br>
+    </div>
+  </div>
+
+  <div id='select-stone-menu'>
+    <div class='select-menu-stones' id='ss-1' name='crown'></div>
+    <div class='select-menu-stones' id='ss-2' name='shield'></div>
+    <div class='select-menu-stones' id='ss-3' name='sword'></div>
+    <div class='select-menu-stones' id='ss-4' name='flag'></div>
+    <div class='select-menu-stones' id='ss-5' name='knight'></div>
+    <div class='select-menu-stones' id='ss-6' name='hammer'></div>
+    <div class='select-menu-stones' id='ss-7' name='scales'></div>
+  </div>
+</body>
+<footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="logic.js"></script>
+</footer>
+</html>

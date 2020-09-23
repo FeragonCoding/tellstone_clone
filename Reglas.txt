@@ -1,0 +1,36 @@
+Reglas
+  --Las fichas se mueven del pool al line.---------
+  --Una ficha solo puede estar en una posicion del lane y no puede volverse a utilizar-----
+  --Se tienen que poner boca abajo------ 
+  --Los lugares de score token comienzan vacios------
+  --Los score token se mueven por puntos ganados.-------
+  --Se debe indicar que jugador juega y dar a elegir la acción------
+
+
+Fases
+  --Aleatoramente se toma una piedra y se pone en la mitad del tablero
+  --Se elige quien comienza.
+  --En un turno, cada jugador puede realizar una de las siguientes 6 acciones.
+    --Place: El jugador señala una piedra del pool para que el oponente la ponga donde el indique. Solo se puede poner al lado de otras piedras--------
+    --Hide: El jugador señala una piedra en la linea para que el oponente la ponga boca abajo----------
+    --Swap: El jugador señala dos piedras en la linea para que intercambien posiciones (Seguiran boca abajo o boca arriba)--------
+    --Peek: Sin que el oponente vea, observa el simbolo de una piedra boca abajo. ---------
+            Si el oponente anotó un punto en el turno anterior, puedes observar 3 piedras. --------
+    --Challenge: El jugador señala una piedra en la linea y le dice al otro jugador "I challenge you to name this stone". ----------
+                 Si el oponente acierta, entonces el gana 1 punto, si no, el jugador gana un punto.  --------------
+                 Sin importar el resultado, la piedra queda boca arriba. --------------
+                 Se debe volver a desactivar el boton de peek y challenge si no hay piedras boca abajo -----
+    --Boast: Al estar todas las piezas en el tablero, el jugador puede decir "I know all the hidden symbols" entonces el oponente debera elegir entre las siguientes 3 opciones:
+      --"I Believe you, have a point" El jugador gana un punto
+      --"I don't believe you, prove it" El jugador tendra que nombre cada piedra boca a abajo, una a una, en cualquier orden.
+      --"I don't care. I know them too" El jugaddor ahora tendra que elegir entre las dos opciones anteriores y aplicar dichas reglas al oponente.
+      Si algun jugador logra mencionar todas las piezas, gana inmediatamente. Si algun jugador falla asi sea 1 pieza, el oponente gana la partida.
+
+
+Validaciones: -----------------
+  --Place: Solo se puede usar cuando hay piezas en el pool  -------
+  --Hide: Solo se puede usar mientras exista al menos 1 pieza boca arriba  -------
+  --Swap: Solo se puede usar mientras exista mas de una pieza en el tablero  -------
+  --Peek: Que exista al menos una pieza boca abajo  -------
+  --Challenge: lo mismo que peek  -------
+  --Boast: Lo mismo que peek        -------

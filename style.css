@@ -1,0 +1,359 @@
+#line {
+  /*background-color: purple;*/
+  background-size: 100%;
+  background-image: url('./source/mat.png');
+  width: 1460px;
+  height: 400px;
+  margin: auto;
+}
+
+.line-stone{
+  background-color: grey;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-top: 105px;
+  position: absolute;
+}
+
+.line-stone:hover{
+  cursor: pointer;
+}
+
+.pool-stone{
+  background-color: black;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.pool-stone:hover{
+  cursor: pointer;
+}
+
+#ls-1{
+  margin-left: 40px;
+}
+#ls-2{
+  margin-left: 240px;
+}
+#ls-3{
+  margin-left: 440px;
+}
+#ls-4{
+  margin-left: 640px;
+}
+#ls-5{
+  margin-left: 840px;
+}
+#ls-6{
+  margin-left: 1040px;
+}
+#ls-7{
+  margin-left: 1240px;
+}
+
+
+#ps-1{
+  margin-left: 80px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-crown.png');
+}
+#ps-2{
+  margin-left: 280px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-shield.png');
+}
+#ps-3{
+  margin-left: 480px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-sword.png');
+}
+
+#ps-4{
+  margin-left: 680px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-flag.png');
+}
+
+#ps-5{
+  margin-left: 880px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-knight.png');
+}
+
+#ps-6{
+  margin-left: 1080px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-hammer.png');
+}
+
+#ps-7{
+  margin-left: 1280px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-scales.png');
+}
+
+.score-token{
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #FFF;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  text-align: center;
+  color: white;
+}
+
+.player-1-st{
+  top: 42px;
+  left: 70px;
+}
+
+.player-2-st{
+  top: 318px;
+  right: 73px;
+}
+
+#py1-st-1{
+  background: center;
+  background-size: cover;
+  /*background-image: url('./source/st-blue.png');*/
+}
+#py1-st-2{
+  background: center;
+  background-size: cover;
+  margin-left: 60px;
+}
+#py1-st-3{
+  background: center;
+  background-size: cover;
+  margin-left: 120px;
+}
+
+#py2-st-1{
+  background: center;
+  background-size: cover;
+  /*background-image: url('./source/st-red.png');*/
+}
+#py2-st-2{
+  background: center;
+  background-size: cover;
+  margin-right: 60px;
+}
+#py2-st-3{
+  background: center;
+  background-size: cover;
+  margin-right: 120px;
+}
+
+.overlay-menu{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+#player-actions-container{
+  position: absolute;
+  display: none;
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10%;
+  background-color: white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20%;
+}
+#player-number {
+  color: blue;
+}
+
+.player-actions {
+  border-radius: 20%;
+}
+
+.player-actions:hover{
+  
+  color: white;
+  cursor: pointer;
+}
+
+.pa-disable{
+  color:grey;
+  cursor: not-allowed;
+}
+
+.pa-disable:hover{
+  color:grey;
+  cursor: not-allowed;
+}
+
+#boast-actions-container{
+  position: absolute;
+  display: none;
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10%;
+  background-color: white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20%;
+}
+
+.boast-actions {
+  border-radius: 20%;
+}
+
+.boast-actions:hover{
+  
+  color: white;
+  cursor: pointer;
+}
+
+#next-turn-button{
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 30%;
+}
+
+#end-game-button{
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 30%; 
+  color: white;
+  display: none;
+}
+
+#end-game-button:hover{
+  cursor: pointer;
+}
+
+.shout-text{
+  font-size: 42pt;
+  position: float;
+  text-align: center;
+  width: 100%;
+  border-radius: 30%;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#challenge-text{
+  display: none;
+}
+
+#player-1-point{
+  display: none; 
+  background-color: blue;
+}
+
+#player-2-point{
+  display: none; 
+  background-color: red;
+}
+
+#player-1-won{
+  display: none; 
+  background-color: blue;
+}
+
+#player-2-won{
+  display: none; 
+  background-color: red;
+}
+
+#select-stone-menu{
+  display: none;
+  border-radius: 12%;
+  background-color: #f7f2dc;
+  width: 452px;
+  height: 68px;
+  top: 240px;
+  left: 140px;
+  position: fixed;
+}
+
+#select-stone-menu::after{
+  content: "";
+  top: -58%;
+  left: 50%;
+  margin-left: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent #f7f2dc transparent;
+  position: absolute;
+}
+
+.select-menu-stones{
+  background-color: black;
+  border-radius: 10%;
+  width:  60px;
+  height: 60px;
+  margin-top: 4px;
+  position: absolute;
+}
+
+.select-menu-stones:hover{
+  cursor: pointer;
+}
+
+#ss-1{
+  margin-left: 4px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-crown.png');
+}
+#ss-2{
+  margin-left: 68px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-shield.png');
+}
+#ss-3{
+  margin-left: 132px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-sword.png');
+}
+
+#ss-4{
+  margin-left: 196px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-flag.png');
+}
+
+#ss-5{
+  margin-left: 260px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-knight.png');
+}
+
+#ss-6{
+  margin-left: 324px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-hammer.png');
+}
+
+#ss-7{
+  margin-left: 388px;
+  background: center;
+  background-size: cover;
+  background-image: url('./source/ps-scales.png');
+}
